@@ -108,6 +108,9 @@ body{
     padding-left: 2%;
     float: left;
 }
+.half-width h2{
+    color:orange;
+}
 
 footer{
     text-align: center;
