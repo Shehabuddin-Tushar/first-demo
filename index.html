@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+   
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,9 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
     
 </head>
-<body>
+<body onLoad="disableClick()">
     <!--first section start-->
     <section class="flex-container bg-img">
           <div class="first-text-div">
@@ -86,6 +88,13 @@
 </footer>
 
   <!-- third section end--> 
-  <script type="text/javascript" src="css.js"></script>
+  <script>
+    $(document).ready(function() {
+        $("body").on("contextmenu", function(e) {
+            return false;
+          });
+      });
+  </script>
+  <!-- <script type="text/javascript" src="css.js"></script> -->
 </body>
 </html>
