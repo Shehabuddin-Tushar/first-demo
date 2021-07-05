@@ -38,7 +38,11 @@ body{
     font-weight: bolder;
 }
 .first-text-div h1 span.myname{
-    color:orange
+    
+    background: linear-gradient(to right, red,blue,green);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
 }
 .first-text-div h3{
     
@@ -117,7 +121,14 @@ body{
     
 }
 .half-width h2{
-    color:orange;
+  
+
+ 
+    background: linear-gradient(to right, red,green,blue);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  
 }
 
 footer{
